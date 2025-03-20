@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main-container {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        height: 50vh;
+        width: 21vw;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background-color:lightgray;
+        text-align: center;
+        border: solid;
+        padding: 4%;
+        margin-top:50px;
+        border-radius: 8px;
+    }
+    button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+    input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+    }
+    #demo {
+           width: 90%;
+           height: 10%;
+           padding: 10px;
+           border-radius: 10px;
+           font-size: 20px;
+        }
+</style>
+<script>
+    function Submit(){
+        // input
+        let y = document.getElementById("name").value;
+        let x = document.getElementById("password").value;
+        let z =(x=="admin"&& y=="technology"?"loginsuccesful":"login-unsuccesful")
+        alert(z)
+        document.getElementById("demo").innerHTML=z;
+
+       if(x=="admin"&& y=="technology" ) {
+        
+       alert(" log in succesful")
+       }else{
+        alert(" log in unsuccesful")
+        }
+    }
+
+
+</script>
+</head>
+<body>
+    <!-- main-container -->
+  <div class="main-container">
+    <div class="container">
+      <h1>Login</h1>
+    <div id="demo"></div>
+      <br />
+      <!-- first input -->
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="User Name">
+      <br />
+      <br />
+      <!-- second input -->
+      <label for="password"></label>
+      <input type="password" id="password" placeholder="Password">
+      <br />
+      <br />
+      <!-- button -->
+      <button type="button" onclick="Submit()">log in</button>
+    </div>
+  </div>
+</body>
+</html>
