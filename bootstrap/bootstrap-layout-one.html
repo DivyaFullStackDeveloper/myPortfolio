@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap layout one</title>
+  <!-- bootstrap css cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap script link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    .row-one {
+      height: 100px;
+    }
+
+    .one {
+      background-color: red;
+    }
+
+    .two {
+      background-color: green;
+    }
+
+    .three {
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- container fluid division -->
+  <div class="container-fluid">
+    <div class="row row-one">
+      <div class="one col-sm-4 col-md-6 col-lg-3">Action</div>
+      <div class="two col-sm-4 col-md-3 col-lg-3">Another action</div>
+      <div class="three col-sm-4 col-md-3 col-lg-6">Something else here</div>
+    </div>
+  </div>
+  <!-- accordian start -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+          plugin adds the appropriate classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+          this with custom CSS or overriding our default variables. It's also worth noting that just about any
+          HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+          collapse plugin adds the appropriate classes that we use to style each element. These classes
+          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+          modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+          just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+          overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+          collapse plugin adds the appropriate classes that we use to style each element. These classes
+          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+          modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+          just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+          overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- accordian end -->
+  <!-- card start -->
+  <!-- card one -->
+  <div class="row">
+    <div class="card" style="width: 17rem;">
+      <img
+        src="https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-colorful-website-background-cool-abstract-designs.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <button type="button" class="btn btn-info">Info</button>
+      </div>
+    </div>
+    <!-- card two -->
+    <div class="card " style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OmlHsDbk0kzS0NaiG5XkCyzkACcrbdF3Wg&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <button type="button" class="btn btn-info">Info</button>
+      </div>
+    </div>
+    <!-- card three -->
+    <div class="card " style="width: 18rem;">
+      <img
+        src="data:image/jpeg;base64,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"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <button type="button" class="btn btn-info">Info</button>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="card " style="width: 18rem;">
+      <img
+        src="https://png.pngtree.com/background/20210710/original/pngtree-colorful-corporate-annual-meeting-background-design-picture-image_974132.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <button type="button" class="btn btn-info">Info</button>
+
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Qu1sAiCt7L6XBrfciomOk_jodHLwscIijY_mH7Da0n8Aj9ceEsAaJSJhj7SyYrkNg_E&usqp=CAU"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <button type="button" class="btn btn-info">Info</button>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- carousel  -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/022/575/456/small_2x/chamomile-flower-field-camomile-in-the-nature-field-of-camomiles-at-sunny-day-at-nature-camomile-daisy-flowers-in-summer-day-chamomile-flowers-field-wide-background-in-sun-light-generative-ai-photo.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://t3.ftcdn.net/jpg/07/17/67/92/360_F_717679266_qJncFRlkmRTITlqGVwdfE3iVfcZz73HZ.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/premium-photo/nature-background-concept-beautiful-summer-meadow-background-inspirational-nature-closeup_1108314-753.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- dropdown start -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <!-- end dropdown -->
+    <!-- start list group -->
+    <ul class="list-group">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+    <!-- end list group  -->
+    <!-- modal start -->
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- nav tabs -->
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <!-- nav tabs -->
+    <!-- offcanvas start -->
+    <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- offcanves end -->
+    <!-- Pagination start -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <!-- Pagination end -->
+    <!-- Placeholders start -->
+    <div class="card">
+      <img
+        src="https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-colorful-website-background-cool-abstract-designs.jpg"
+        class="card-img-top" alt="...">
+
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" aria-hidden="true">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OmlHsDbk0kzS0NaiG5XkCyzkACcrbdF3Wg&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title placeholder-glow">
+          <span class="placeholder col-6"></span>
+        </h5>
+        <p class="card-text placeholder-glow">
+          <span class="placeholder col-7"></span>
+          <span class="placeholder col-4"></span>
+          <span class="placeholder col-4"></span>
+          <span class="placeholder col-6"></span>
+          <span class="placeholder col-8"></span>
+        </p>
+        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+      </div>
+    </div>
+    <!-- Placeholders end -->
+    <!-- Popovers start -->
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title"
+      data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <!-- Popovers end -->
+    </body>
+
+</html>
