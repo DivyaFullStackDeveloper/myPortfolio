@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <h1> Even or Odd Check in Swift Programing Language</h1>
+    <h1> Check leep year in Swift Programing Language</h1>
 
     <!-- Row 1: Terminal Input Code + Output -->
     <div class="card-row">
@@ -19,24 +19,26 @@
         <div class="code-box">
           <code>
             import Foundation
- 
-            print("Enter a number: ", terminator: "")
-            if let input = readLine(), let num = Int(input) {
-                if num % 2 == 0 {
-                    print("The number is Even.")
+
+            print("Enter a year: ", terminator: "")
+            if let input = readLine(), let year = Int(input) {
+                if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) {
+                    print("\(year) is a leap year.")
                 } else {
-                    print("The number is Odd.")
+                    print("\(year) is not a leap year.")
                 }
             } else {
-                print("Invalid input!")
-            }  
+                print("Invalid input. Please enter a valid year.")
+            }
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Odd.</div>
+        <div class="input-output">Enter a year: 2024
+          2024 is a leap year.
+        </div>
       </div>
     </div>
 
@@ -47,21 +49,21 @@
         <div class="code-box">
           <code>    
             import Foundation
- 
-            let num = 10
-             
-            if num % 2 == 0 {
-                print("The number is Even.")
+
+            let year = 2024  // Assigned value
+            
+            if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) {
+                print("\(year) is a leap year.")
             } else {
-                print("The number is Odd.")
-            }            
+                print("\(year) is not a leap year.")
+            }     
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Even.</div>
+        <div class="input-output">2024 is a leap year.</div>
       </div>
     </div>
 

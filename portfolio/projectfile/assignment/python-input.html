@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <h1> Even or Odd Check in Python Programing Language</h1>
+    <h1> Check leep year in python programing language</h1>
 
     <!-- Row 1: Terminal Input Code + Output -->
     <div class="card-row">
@@ -19,19 +19,20 @@
         <h2>Code (Terminal Input)</h2>
         <div class="code-box">
           <code>
-            num = int(input("Enter a number: "))
+            year = int(input("Enter a year: "))  # User input
 
-            if num % 2 == 0:
-                print("The number is Even.")
+            if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+                print(f"{year} is a leap year.")
             else:
-                print("The number is Odd.")              
+                print(f"{year} is not a leap year.")             
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Odd.</div>
+        <div class="input-output">Enter a year: 2024
+          2024 is a leap year.</div>
       </div>
     </div>
 
@@ -41,20 +42,19 @@
         <h2>Code (Assigned Value)</h2>
         <div class="code-box">
           <code>
-            num = 8
- 
-            if num % 2 == 0:
-              print("The number is Even.")
+            year = 2024  # Assigned value
+
+            if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+                print(f"{year} is a leap year.")
             else:
-              print("The number is Odd.")
-     
+                print(f"{year} is not a leap year.")
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Even.</div>
+        <div class="input-output">2024 is a leap year.</div>
       </div>
     </div>
 

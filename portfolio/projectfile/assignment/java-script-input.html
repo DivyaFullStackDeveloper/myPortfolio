@@ -10,61 +10,66 @@
 
 <body>
   <div class="container">
-    <h1> Even or Odd Check in java-script Programing Language</h1>
+    <h1> Check Leap Year in JavaScript Programming Language</h1>
 
-    <!-- Row 1: Terminal Input Code + Output -->
+    <!-- row- 1  -->
     <div class="card-row">
       <div class="card">
-        <h2>Code (Terminal Input)</h2>
+        <h2>Code (Prompt)</h2>
         <div class="code-box">
           <code>
-            import java.util.Scanner;
- 
-            public class Main {
-              public static void main(String[] args) {
-                Scanner sc = new Scanner(System.in);
-                System.out.print("Enter a number: ");
-                int num = sc.nextInt();
-             
-                if (num % 2 == 0)
-                  System.out.println("The number is Even.");
-                else
-                  System.out.println("The number is Odd.");
-              }
-            }            
+            let year = prompt("Enter a year:");
+            let result = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? `${year} is a leap year.` : `${year} is not a leap year.`;
+            alert(result);
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Odd.</div>
+        <div class="input-output">Enter a year: 2000
+          <br>2000 is a leap year.</div>
       </div>
     </div>
 
-    <!-- Row 2: Assigned Value Code + Output -->
+    <!-- row-2-->
     <div class="card-row">
       <div class="card">
         <h2>Code (Assigned Value)</h2>
         <div class="code-box">
-          <code>    
-            public class Main {
-              public static void main(String[] args) {
-                int num = 10;
-             
-                if (num % 2 == 0)
-                  System.out.println("The number is Even.");
-                else
-                  System.out.println("The number is Odd.");
-              }
+          <code>
+            const year = 2024;  // Assigned value
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+                alert(`${year} is a leap year.`);
+            } else {
+                alert(`${year} is not a leap year.`);
             }
           </code>
         </div>
       </div>
-
+     
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Even.</div>
+        <div class="input-output">2024 is a leap year.</div>
+      </div>
+    </div>
+
+    <!--  row-3-->
+    <div class="card-row">
+      <div class="card">
+        <h2>Code (Alert)</h2>
+        <div class="code-box">
+          <code>
+            const year = 2024;  // Assigned value
+            const result = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? `${year} is a leap year.` : `${year} is not a leap year.`;
+            alert(result);
+          </code>
+        </div>
+      </div>
+     
+      <div class="card">
+        <h2>Output</h2>
+        <div class="input-output">2024 is a leap year.</div>
       </div>
     </div>
 
@@ -75,4 +80,3 @@
   </div>
 </body>
 </html>
- 

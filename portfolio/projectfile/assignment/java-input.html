@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Even or Odd Checker</title>
-  <link rel="stylesheet" href="project1.css"/>
+  <link rel="stylesheet" href="project1.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
   <div class="container">
-    <h1> Even or Odd Check in java programing Language</h1>
+    <h1> Check leep year in java programing Language</h1>
 
-    <!-- Row 1: Terminal Input Code + Output -->
+    <!-- row-1  -->
     <div class="card-row">
       <div class="card">
         <h2>Code (Terminal Input)</h2>
         <div class="code-box">
           <code>
             import java.util.Scanner;
- 
-            public class Main {
-              public static void main(String[] args) {
-                Scanner sc = new Scanner(System.in);
-                System.out.print("Enter a number: ");
-                int num = sc.nextInt();
-             
-                if (num % 2 == 0)
-                  System.out.println("The number is Even.");
-                else
-                  System.out.println("The number is Odd.");
-              }
-            }            
+
+            public class LeapYearCheck {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a year: ");
+                    int year = scanner.nextInt();
+            
+                    if ((year % 4 == 0 && year % 100 != 0) ||
+                     (year % 400 == 0)) {
+                        System.out.println(year + " is a
+                         leap year.");
+                    } else {
+                        System.out.println(year + " is not a
+                         leap year.");
+                    }
+            
+                    scanner.close();
+                }
+            }   
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Odd.</div>
+        <div class="input-output">Enter a year: 2023
+          2023 is not a leap year.</div>
       </div>
     </div>
 
-    <!-- Row 2: Assigned Value Code + Output -->
+    <!-- row-2  -->
     <div class="card-row">
       <div class="card">
         <h2>Code (Assigned Value)</h2>
         <div class="code-box">
-          <code>    
-            public class Main {
+          <code>
+            public class LeapYearCheck {
               public static void main(String[] args) {
-                int num = 10;
-             
-                if (num % 2 == 0)
-                  System.out.println("The number is Even.");
-                else
-                  System.out.println("The number is Odd.");
+                  int year = 2024;  // Assigned value
+          
+                  if ((year % 4 == 0 && year % 100 != 0) ||
+                   (year % 400 == 0)) {
+                      System.out.println(year + " is a 
+                      leap year.");
+                  } else {
+                      System.out.println(year + " is not a 
+                      leap year.");
+                  }
               }
-            }
+          }
+          
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Even.</div>
+        <div class="input-output">2024 is a leap year.</div>
       </div>
     </div>
 
@@ -74,4 +88,5 @@
     </div>
   </div>
 </body>
+
 </html>

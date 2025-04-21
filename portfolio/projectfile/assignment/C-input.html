@@ -11,9 +11,9 @@
 
 <body>
   <div class="container">
-    <h1>Even or Odd Check in C Programing Language</h1>
+    <h1>  Check leap year in C programing language</h1>
 
-    <!-- Row 1: Terminal Input Code + Output -->
+    <!-- Row-1  -->
     <div class="card-row">
       <div class="card">
         <h2>Code (Terminal Input)</h2>
@@ -26,7 +26,9 @@
                   printf("Enter a year:");
                   scanf("%d",&year);
               
-                  ( year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)? printf("%d is a leap year.\n",year): printf("%d is not a leap year",year);
+                  ( year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)? 
+                  printf("%d is a leap year.\n",year): 
+                  printf("%d is not a leap year",year);
               
                   return 0;
               
@@ -37,27 +39,37 @@
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Odd.</div>
+        <div class="input-output">
+         Enter a year:2024 is a leap year.
+        </div>
       </div>
     </div>
 
-    <!-- Row 2: Assigned Value Code + Output -->
+    <!-- Row-2 -->
     <div class="card-row">
       <div class="card">
         <h2>Code (Assigned Value)</h2>
         <div class="code-box">
           <code>
-            #include <stdio.h> int main() { int num = 10; if(num % 2
-               ==0) printf("The number is Even."); else 
-               printf("The number is
-               Odd."); return 0; }
+            #include<stdio.h>
+
+              int main(){
+                  int year = 2024;  // Assigned value
+              
+                  (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)
+                      ? printf("%d is a leap year.\n", year)
+                      : printf("%d is not a leap year", year);
+              
+                  return 0;
+              }
+              
           </code>
         </div>
       </div>
 
       <div class="card">
         <h2>Output</h2>
-        <div class="input-output">The number is Even.</div>
+        <div class="input-output">2024 is a leap year.</div>
       </div>
     </div>
 
