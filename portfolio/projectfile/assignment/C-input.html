@@ -1,120 +1,69 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link rel="stylesheet" href="./project.css">
-</head>
-<body>
-    <div class="Projects-container" id="Project">
-     <b class="project-title"><u>input code in C language</u></b>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-      <div class="code-page">
-         <div class="input-cod">
-          <div class="code-card">
-                Code (Terminal Input)
-                <code class="code-box">            
-                    #include <stdio.h> int main() { int num; printf("Enter a
-                    number: "); scanf("%d", &num); if(num % 2 == 0) printf("The number
-                    is Even."); else printf("The number is Odd."); return 0; }
-                  </code>
-                  <button><a href="" class="CV-button">Run</a></button>
-            </div>
-            <br/>
-            <div class="code-card">
-                Code (Assigned Value)
-                  <code class="code-box">            
-                    #include <stdio.h> int main() { int num = 10; if(num % 2 ==
-                        0) printf("The number is Even."); else printf("The number is
-                        Odd."); return 0; }          
-                    </code>
-              </div>
-            </div>
-            <br/>
-
-         <div class="output-page">
-                <div class="code-card">
-                    output
-                 
-                </div>
-                <br/>
-               <div class="code-card">
-                output
-                
-               </div>
-             </div>
-        </div>
-    
-      </div>
-     
-</body> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignment</title>
-  <link rel="stylesheet" href="./project.css" />
+  <title>Even or Odd Checker</title>
+  <link rel="stylesheet" href="project1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="Projects-container" id="Project">
-    <b class="project-title"><u>Input Code in C Language</u></b>
+  <div class="container">
+    <h1>Even or Odd Check in C Programing Language</h1>
 
-    <div class="code-page">
-      <!-- Input Code Section -->
-      <div class="input-cod">
-        <div class="code-card">
-          <h3>Code (Terminal Input)</h3>
-        <code class="code-box">
-            #include &lt;stdio.h&gt;
-            int main() {
-            int num;
-            printf("Enter a number: ");
-            scanf("%d", &num);
-            if(num % 2 == 0)
-             printf("The number is Even.");
-            else
-             printf("The number is Odd.");
-          return 0;
-         }
-        </code>
-        </div>
-
-        <div class="code-card">
-          <h3>Code (Assigned Value)</h3>
-          <code class="code-box">
-           #include &lt;stdio.h&gt;
-
-           int main() {
-           int num = 10;
-           if(num % 2 == 0)
-            printf("The number is Even.");
-           else
-           printf("The number is Odd.");
-          return 0;
-        }
+    <!-- Row 1: Terminal Input Code + Output -->
+    <div class="card-row">
+      <div class="card">
+        <h2>Code (Terminal Input)</h2>
+        <div class="code-box">
+          <code>
+            #include<stdio.h>
+              int main(){
+                  int year;
+              
+                  printf("Enter a year:");
+                  scanf("%d",&year);
+              
+                  ( year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)? printf("%d is a leap year.\n",year): printf("%d is not a leap year",year);
+              
+                  return 0;
+              
+                  }
           </code>
         </div>
       </div>
 
-      <!-- Output Section -->
-      <div class="output-page">
-        <div class="code-card">
-          <h3>Output</h3>
-          <p>The number is Even.</p>
-        </div>
-        <div class="code-card">
-          <h3>Output</h3>
-          <p>The number is Even.</p>
+      <div class="card">
+        <h2>Output</h2>
+        <div class="input-output">The number is Odd.</div>
+      </div>
+    </div>
+
+    <!-- Row 2: Assigned Value Code + Output -->
+    <div class="card-row">
+      <div class="card">
+        <h2>Code (Assigned Value)</h2>
+        <div class="code-box">
+          <code>
+            #include <stdio.h> int main() { int num = 10; if(num % 2
+               ==0) printf("The number is Even."); else 
+               printf("The number is
+               Odd."); return 0; }
+          </code>
         </div>
       </div>
+
+      <div class="card">
+        <h2>Output</h2>
+        <div class="input-output">The number is Even.</div>
+      </div>
+    </div>
+
+    <!-- Home Button -->
+    <div class="btn-wrap">
+      <a class="btn" href="./Assignment.html">Home</a>
     </div>
   </div>
 </body>

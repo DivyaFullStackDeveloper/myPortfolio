@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link rel="stylesheet" href="./project.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Even or Odd Checker</title>
+  <link rel="stylesheet" href="project1.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="Projects-container" id="Project">
-     <b class="project-title"><u>input code in Java</u></b>
-      <div class="code-page">
-        <div class="option">
-            <button class="code-btn">Assign</button>
-            <button class="code-btn">terminal</button>
-           
+  <div class="container">
+    <h1> Even or Odd Check in java programing Language</h1>
+
+    <!-- Row 1: Terminal Input Code + Output -->
+    <div class="card-row">
+      <div class="card">
+        <h2>Code (Terminal Input)</h2>
+        <div class="code-box">
+          <code>
+            import java.util.Scanner;
+ 
+            public class Main {
+              public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter a number: ");
+                int num = sc.nextInt();
+             
+                if (num % 2 == 0)
+                  System.out.println("The number is Even.");
+                else
+                  System.out.println("The number is Odd.");
+              }
+            }            
+          </code>
         </div>
-        <div class="code"></div>
+      </div>
+
+      <div class="card">
+        <h2>Output</h2>
+        <div class="input-output">The number is Odd.</div>
       </div>
     </div>
+
+    <!-- Row 2: Assigned Value Code + Output -->
+    <div class="card-row">
+      <div class="card">
+        <h2>Code (Assigned Value)</h2>
+        <div class="code-box">
+          <code>    
+            public class Main {
+              public static void main(String[] args) {
+                int num = 10;
+             
+                if (num % 2 == 0)
+                  System.out.println("The number is Even.");
+                else
+                  System.out.println("The number is Odd.");
+              }
+            }
+          </code>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Output</h2>
+        <div class="input-output">The number is Even.</div>
+      </div>
+    </div>
+
+    <!-- Home Button -->
+    <div class="btn-wrap">
+      <a class="btn" href="./Assignment.html">Home</a>
+    </div>
+  </div>
 </body>
+</html>
