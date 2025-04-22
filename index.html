@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+ 
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,14 +16,21 @@
 
 <body> 
     <div class="main-container">
+        
         <!-- first row -->
         <div class="header"> 
             <b class="file-name">Portfolio</b>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
             <i class='bx bx-menu' id="menu-icon"></i>
             <a class="navbar" href="#Home">Home</a>
             <a class="navbar" href="#About">About</a>
             <a class="navbar" href="#Project">Project</a>
             <a class="navbar" href="#Contact">Contact</a>
+            
         </div>
         <!-- second row -->
         <div class="Home-container" id="Home">

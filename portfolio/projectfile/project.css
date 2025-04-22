@@ -1,11 +1,24 @@
-/*  project css  */
-.Projects-container {
-    width: 100%;
+ body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #072227, #001C30, #040D12, #001C30);
+  }
+ /*  project css  */
+  .Projects-container {
+    width:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 40px;
-}
+    background: linear-gradient(to right, #072227, #001C30, #040D12, #001C30);
+  }
+
+
+ 
+/* #project{
+    background-color: linear-gradient(to right, #072227,#001C30, #040D12, #001C30) ;
+} */
 
 .project-title {
     font-size: 2rem;

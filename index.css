@@ -47,7 +47,7 @@ html{
 }
 
 .navbar:hover{
-    color: #072227;
+    color:#4FBDBA;
 }
 
 /* home container styling   */
@@ -159,6 +159,7 @@ h4 {
     flex-direction: column;
     text-align: center;
     padding: 40px;
+    background-color: #001C30;
 }
 
 .project-title {
